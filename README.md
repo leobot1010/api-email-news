@@ -17,17 +17,17 @@ This occurs because within either 'title' or 'description' is an empty null valu
 This will show as "title: None" or "description: None" in the list of articles
 
 SOLUTION:
-For this I added an 'is not None' conditional that only allowed string values 
+For this, I added an 'is not None' conditional, which only allows string values, 
 therefore eliminating all None values.
 
 __________________________________________________________
 
 PROBLEM:
 Some of the titles and descriptions had a lot of white space, whether break lines, tab spaces or 
-single spaces. They needed to be removed for a clean layout. 
+single spaces. They needed to be removed for a cleaner layout. 
 
 SOLUTION:
-pass each iteration through this double function:  " ".join(<str>.split())
+Pass each iteration through this double function:  " ".join(<str>.split())
 
 ___________________________________________________________
 
